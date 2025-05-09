@@ -37,19 +37,19 @@ robots_url: https://raw.githubusercontent.com/IQSS/counter-processor/refs/heads/
 machines_url: https://raw.githubusercontent.com/IQSS/counter-processor/refs/heads/goto-gdcc/user-agents/lists/machine.txt
 
 # the year and month for the report you are creating.
-year_month: 2018-04
+year_month: 2022-04
 
 # Output formats are only json currently. tsv was planned but spec was never finalized.
 
 # Don't put the filename extension, the code will tack on the tsv or json extension for you.
-output_file: tmp/test_out
+output_file: tmp/make-data-count-report
 output_format: json
 
 # Allows the report to have volume (size) info, which DataCite doesn't accept yet
 output_volume: False
 
 # the name of the platform that goes into your reports
-platform: Harvard Dataverse
+platform: QDR
 
 # Don't put your api token in here if you're going to commit it, but put in separate secrets.yaml in same
 # directory as the config or else set a environment variable when starting up in order to override the key.
@@ -59,7 +59,7 @@ hub_api_token: set_me_in_secrets
 #hub_base_url: https://api.test.datacite.org
 hub_base_url: https://api.datacite.org
 # FIXME: Change "upload_to_hub" to True when you're ready.
-upload_to_hub: False
+upload_to_hub: True
 
 # only use this to simulate running on a date besides today
 # simulate_date: 2018-04-02
@@ -71,4 +71,4 @@ maxmind_geoip_country_path: maxmind_geoip/GeoLite2-Country.mmdb
 pragma_cache_size: -64000
 
 # Datacite has a max dataset ids of 50,000 per file upload
-max_ids_per_report_file: 20000
+max_ids_per_report_file: 40000
