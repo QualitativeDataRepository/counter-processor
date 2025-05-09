@@ -57,10 +57,12 @@ def main():
     if config.Config().upload_to_hub == True:
         upload.send_to_datacite()
 
-    # Clean up - delete db only after the reports are generated and uploaded successfully
-    #Not when run daily
-    #if os.path.isfile(config.Config().processing_database):
-    #   os.remove(config.Config().processing_database)
+    # Clean up - delete db only after all the month's reports are generated and uploaded successfully
+    print(f'Month Complete {config.Config().month_complete()}')
+    # Not running at QDR
+    # if os.path.isfile(config.Config().processing_database) and config.Config().month_complete():
+    #    print(f'Deleting Database {config.Config().processing_database}')
+    #    os.remove(config.Config().processing_database)
 
     if 'test_mode' not in globals():
         sys.exit(0) # this is causing the tests to fail
