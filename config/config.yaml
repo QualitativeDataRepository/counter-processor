@@ -33,8 +33,8 @@ path_types:
 # if something is a robot or machine user-agent.  The text file has one regular expression per line
 #robots_url: https://raw.githubusercontent.com/CDLUC3/Make-Data-Count/master/user-agents/lists/robot.txt
 #machines_url: https://raw.githubusercontent.com/CDLUC3/Make-Data-Count/master/user-agents/lists/machine.txt
-robots_url: https://raw.githubusercontent.com/IQSS/counter-processor/refs/heads/goto-gdcc/user-agents/lists/robots.txt
-machines_url: https://raw.githubusercontent.com/IQSS/counter-processor/refs/heads/goto-gdcc/user-agents/lists/machine.txt
+robots_url: https://raw.githubusercontent.com/QualitativeDataRepository/counter-processor/refs/heads/main/user-agents/lists/robots.txt
+machines_url: https://raw.githubusercontent.com/QualitativeDataRepository/counter-processor/refs/heads/main/user-agents/lists/machine.txt
 
 # the year and month for the report you are creating.
 year_month: 2022-04
@@ -58,7 +58,7 @@ hub_api_token: set_me_in_secrets
 # the test metrics is only for testing
 #hub_base_url: https://api.test.datacite.org
 hub_base_url: https://api.datacite.org
-# FIXME: Change "upload_to_hub" to True when you're ready.
+# FIXME: Change "upload_to_hub" to False for testing
 upload_to_hub: True
 
 # only use this to simulate running on a date besides today
